@@ -105,7 +105,7 @@ header {
   justify-content: center;
 }
 .main-img {
-  width: 75vw;
+  width: 90vw;
   border-radius: 20px;
   height: 80vh;
 }
@@ -400,12 +400,20 @@ header {
     float: none;
   }
 }
-.teste {
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    background-color: blue;
+/*sidebar*/
+
+.side-bar {
+  transition: left 0.5s;
 }
+.side-bar a:hover, li {
+  transition: 0.5s;
+}
+
+.side-bar li,.side-bar a, .side-bar hr {
+  left: -10000px;
+  position: relative;
+}
+
 /*responsividade*/ 
 
 @media (max-width:767px) {
@@ -421,9 +429,11 @@ header {
 
     #menu-icon {
         font-size: 1.8rem;
-        padding: 10px 20px;
         border-radius: 10px;
         background-color: var(--bg-color);
+        height: 35px;
+        padding: 0px 10px;
+
     }
     /*menu*/
 
@@ -468,4 +478,48 @@ header {
         width: 80%;
         height: 200px;
     }
+    .side-bar {
+      position: fixed;
+      width: fit-content;
+      height: 200px;
+      background-color: rgb(22, 22, 22);
+      left: -1000px;
+      margin: 5px;
+      z-index: 1000;
+      top: 107px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 6px;
+      
+  }
+ 
+  .open {
+    left: 0px;
+    transition: 0.2s;
+  }
+
+
+  .side-bar a {
+    color: rgb(255, 255, 255);
+  }
+
+  .side-bar a:hover, li:active{
+    transform: scale(1.2);
+    transition: 0.15s;
+  }
+
+  .side-bar li {
+    margin-left: 10px;
+  }
+
+  .nav {
+    background-color: #5c666b00;
+  }
+
+  .side-bar li,.side-bar a, .side-bar hr {
+    left: 000px;
+    position: relative;
+  }
 }
