@@ -400,7 +400,12 @@ header {
     float: none;
   }
 }
-
+.teste {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
 /*responsividade*/ 
 
 @media (max-width:767px) {
@@ -410,17 +415,21 @@ header {
     }
 
     .navbar a {
-        font-size: 0.5rem;
-        padding: 5px 10px;
-
+        display: none;
     }
+
+
     #menu-icon {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: var(--bg-color);
     }
-
-
     /*menu*/
 
+    header {
+        justify-content: space-between;
+    }
     .menu-list-container {
         flex-wrap: wrap;
     }
@@ -453,5 +462,10 @@ header {
 
     .pizza-descri {
         font-size: 0.7rem;
+    }
+
+    .main-img {
+        width: 80%;
+        height: 200px;
     }
 }
