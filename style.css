@@ -129,6 +129,12 @@ header {
 .menu-item img {
   width: 180px;
   height: auto;
+  transition: 0.2s;
+  padding: 10px;
+}
+
+.menu-item img:hover {
+  transform: scale(1.2);
 }
 
 .slices-count {
@@ -530,4 +536,6 @@ header {
     align-items: center;
     justify-content: center;
   }
+
+  
 }
