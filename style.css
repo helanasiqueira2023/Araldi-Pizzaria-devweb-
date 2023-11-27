@@ -53,6 +53,7 @@ header {
 
 #menu-icon {
     font-size: 2rem;
+   
 }
 
 .logo {
@@ -92,7 +93,7 @@ header {
 
 #menu-icon {
   cursor: pointer;
-  display: flex;
+  display:none;
   align-items: center;
   justify-content: center;
   padding-right: 1rem;
@@ -521,5 +522,9 @@ header {
   .side-bar li,.side-bar a, .side-bar hr {
     left: 000px;
     position: relative;
+  }
+
+  #menu-icon {
+    display: block;
   }
 }
