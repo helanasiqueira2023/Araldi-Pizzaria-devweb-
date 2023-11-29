@@ -536,7 +536,7 @@ header {
     display:flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     right: 0;
   }
 
