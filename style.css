@@ -49,6 +49,7 @@ header {
   align-content: center;
   justify-content: center;
   border-radius: 20px;
+  width: 60rem;
 }
 
 #menu-icon {
@@ -81,7 +82,7 @@ header {
 
 .navbar a {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   font-weight: 500;
 }
@@ -535,6 +536,8 @@ header {
     display:flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    right: 0;
   }
 
   
